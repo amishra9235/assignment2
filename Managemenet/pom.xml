@@ -1,0 +1,38 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>Changelog</groupId>
+	<artifactId>Managemenet</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<reporting>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-changelog-plugin</artifactId>
+				<version>2.3</version>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-project-info-reports-plugin</artifactId>
+				<version>3.0.0</version>
+			</plugin>
+		</plugins>
+	</reporting>
+	<build>
+		<plugins>
+			<!-- Part of Maven - specified version explicitly for compatibility with 
+				the maven-project-info-reports-plugin 3.0.0 -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-site-plugin</artifactId>
+				<version>3.7.1</version>
+			</plugin>
+		</plugins>
+	</build>
+	<scm>
+    <connection>scm:git:git@github.com:amishra9235/assignment2.git</connection>
+    <developerConnection>scm:git:git@github.com:amishra9235/assignment2.git</developerConnection>
+    <url>https://github.com/amishra9235/assignment2.git</url>
+  </scm>
+</project>
